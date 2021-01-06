@@ -16,7 +16,7 @@ var Utils = require("./utils.js");
 
 var Server = function (config, callback) {
 	var port = config.port;
-	if (process.env.MM_PORT) {
+	if (process.env.MM_PORT || 8080) {
 		port = process.env.MM_PORT;
 	}
 
