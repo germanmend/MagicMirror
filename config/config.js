@@ -30,13 +30,39 @@ var config = {
       module: "alert",
     },
     {
-      module: "updatenotification",
-      position: "top_bar"
+      module: "clock",
+      position: "top_left",
+      config: {
+        showSunTimes: true
+      }
     },
     {
-      module: "clock",
-      position: "top_left"
+  		module: "MMM-OpenmapWeather",
+  		position: "top_right",	// This can be any of the regions.
+  									// Best results in left or right regions.
+  		config: {
+    			// See 'Configuration options' for more information.
+    			locationID: "3530597", //Location ID from http://openweathermap.org/help/city_list.txt
+    			appid: "a9aa81340342e664ca7140e66f7c7d3e",  //openweathermap.org API key
+    			colorIcon: true,
+          degreeLabel: true,
+          updateInterval: 1800000,
+          useKMPHWind: true,
+          roundTemp: true
+  		}
     },
+    {
+        module: 'MMM-CoinMarketCap',
+        position: "top_left",
+        header: "Cryptos",
+        config: {
+            apiKey: '24aa5ad0-4c67-4c89-a788-63c284ed8c7a',
+            currencies: ['bitcoin', 'ethereum', 'ripple'],
+            view: 'graphWithChanges',
+            conversion: 'MXN',
+            // See below for more Configuration Options
+        }
+      },
     {
       module: "calendar",
       header: "US Holidays",
@@ -44,33 +70,13 @@ var config = {
       config: {
         calendars: [
           {
-            symbol: "calendar-check",
-            url: "webcal://www.calendarlabs.com/ical-calendar/ics/76/US_Holidays.ics"
+            symbol: "calendar-alt",
+            url: "webcal://www.calendarlabs.com/ical-calendar/ics/60/MX_Holidays.ics"
+            //url: "webcal://www.calendarlabs.com/templates/ical/US-Holidays.ics"
+            //www.calendarlabs.com/ical-calendar/ics/75/MX_Holidays.ics
           }
-        ]
-      }
-    },
-    {
-      module: "compliments",
-      position: "lower_third"
-    },
-    {
-      module: "currentweather",
-      position: "top_right",
-      config: {
-        location: "New York",
-        locationID: "",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-        appid: "YOUR_OPENWEATHER_API_KEY"
-      }
-    },
-    {
-      module: "weatherforecast",
-      position: "top_right",
-      header: "Weather Forecast",
-      config: {
-        location: "New York",
-        locationID: "5128581",  //ID from http://bulk.openweathermap.org/sample/city.list.json.gz; unzip the gz file and find your city
-        appid: "YOUR_OPENWEATHER_API_KEY"
+        ],
+        maximumEntries: 5
       }
     },
     {
@@ -90,7 +96,6 @@ var config = {
       }
     },
   ]
-
 };
 
 /*************** DO NOT EDIT THE LINE BELOW ***************/
