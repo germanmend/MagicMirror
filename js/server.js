@@ -15,7 +15,11 @@ var Log = require("./logger.js");
 var Utils = require("./utils.js");
 
 var Server = function (config, callback) {
-	var port = process.env.PORT || 80;
+	var port = config.port;
+
+	if (process.env.MM_PORT || 80) {
+		port = process.env.MM_PORT;
+	}
 
 	var server = null;
 	if (config.useHttps) {
