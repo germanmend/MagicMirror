@@ -6,5 +6,5 @@ COPY . /magicmirror
 RUN ls
 RUN npm install --unsafe-perm --silent
 
-EXPOSE 80
+EXPOSE 8080
 CMD ["npm", "run", "server"]
