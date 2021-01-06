@@ -1,0 +1,203 @@
+.MMM-MyWeather {
+  max-width: 500px;
+}
+
+.MMM-MyWeather table {
+  border-collapse:collapse;
+}
+
+.MMM-MyWeather table td {
+  line-height: 1.75;
+}
+
+.MMM-MyWeather table tr {
+  border-bottom: solid 1px #222;
+}
+
+.MMM-MyWeather .weathericon {
+  font-size: 45%;
+  line-height: 5px;
+  display: inline-block;
+  -ms-transform: translate(0, -3px); /* IE 9 */
+  -webkit-transform: translate(0, -3px); /* Safari */
+  transform: translate(0, -3px);
+} 
+.MMM-MyWeather .day {
+  padding-left: 0;
+}
+
+.MMM-MyWeather .vcen {
+   vertical-align: top;
+}
+
+.MMM-MyWeather .weather-icon {
+  padding-left: 0px;
+  text-align: center;
+  width:50px; 
+}
+
+.MMM-MyWeather .max-temp {
+  padding-left: 0px;
+  padding-right: 0;
+}
+
+.MMM-MyWeather .tableheader {
+  font-size: 75%;
+  text-align: center;
+} 
+
+.MMM-MyWeather .horizontal td, {
+  text-align: center;
+ } 
+
+.MMM-MyWeather .pop {
+  font-size: 86%;
+} 
+.MMM-MyWeather .mm {
+  font-size: 75%;
+} 
+
+.MMM-MyWeather .green {
+  color: #83FFB3;
+}
+
+.MMM-MyWeather .yellow {
+  color: #eef240;
+}
+
+.MMM-MyWeather .red {
+  color: #ee3939;
+}
+
+.MMM-MyWeather .orange {
+  color: #FFA500;
+}
+
+.MMM-MyWeather .center {
+	text-align: center;
+	padding-right: 10px; 
+}
+	
+.MMM-MyWeather .left {
+	text-align: left;
+}
+
+.MMM-MyWeather .lpad {
+	padding-left: 10px; 
+}
+
+.MMM-MyWeather .currentWeatherIcon {
+  font-size: 75%;
+  line-height: 45px;
+  display: inline-block;
+  -ms-transform: translate(0, -3px); /* IE 9 */
+  -webkit-transform: translate(0, -3px); /* Safari */
+  transform: translate(0, -3px);
+  width: 40%;
+  height: 40%;
+} 
+
+.MMM-MyWeather .forecastWeatherIcon {
+  font-size: 75%;
+  line-height: 65px;
+  display: inline-block;
+  width: 50%;
+  display: block;
+  margin: auto;
+} 
+
+.MMM-MyWeather .moonPhaseIcon {
+  height: 34px;
+  vertical-align: middle;
+} 
+
+.MMM-MyWeather .hrDivider {
+        font-size: 10px;
+}
+
+.MMM-MyWeather .sub {
+    vertical-align: sub;
+    font-size: smaller;
+}
+
+.MMM-MyWeather .smaller {
+    font-size: 60%;
+}
+
+.MMM-MyWeather .currentWeatherIconWrapper .currentWeatherIcon {
+  max-width: 140px;
+  max-height: 140px;
+  width: auto;
+  height: auto;
+  margin:0;
+  vertical-align:top;
+  -webkit-transform: none;
+  transform: none;
+}
+
+
+.MMM-MyWeather .vertical td.hourv,
+.MMM-MyWeather .vertical td.day {
+  text-align: left;
+  color: #FFF;
+}
+
+.MMM-MyWeather table.horizontal,
+.MMM-MyWeather table.horizontal {
+  text-align: center;
+  line-height: 1.5;
+  font-size: 17px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+.MMM-MyWeather table.horizontal .hour,
+.MMM-MyWeather table.horizontal .day {
+  line-height: 25px;
+  font-size: 20px;
+  color: #FFF;
+}
+
+
+.MMM-MyWeather .min-temp {
+  color: #6fc4f5;
+
+}
+.MMM-MyWeather .max-temp {
+  color: #f8dd70;
+}
+
+.MMM-MyWeather .hourly-temp {
+  color: #FFF;
+}
+
+.MMM-MyWeather table .icon-container {
+  width: 20px;
+  height: 20px;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin-left: 3px;
+  bottom: -3px;
+}
+
+.MMM-MyWeather table .wi-wind {
+  font-size: 24px;
+  position: relative;
+  top: -2px;
+}
+
+.MMM-MyWeather .forecastText {
+  text-align: left;
+  font-size: 20px;
+  line-height: normal;
+  margin-bottom: 6px;
+}
+
+.MMM-MyWeather .thinText {
+	  font-weight: 200 ;
+}
+
+
+
+
