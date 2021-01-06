@@ -7,7 +7,7 @@
  * MIT Licensed.
  */
 var address = "localhost";
-var port = 8080;
+var port = 80;
 if (typeof mmPort !== "undefined") {
 	port = mmPort;
 }
