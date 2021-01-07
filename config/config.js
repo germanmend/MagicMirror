@@ -45,7 +45,7 @@ var config = {
     			appid: "a9aa81340342e664ca7140e66f7c7d3e",  //openweathermap.org API key
     			colorIcon: true,
           degreeLabel: true,
-          updateInterval: 1800000,
+          updateInterval: 600000,
           useKMPHWind: true,
           roundTemp: true
   		}
