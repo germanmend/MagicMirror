@@ -37,6 +37,20 @@ var config = {
       }
     },
     {
+  		module: "MMM-OpenmapWeather",
+  		position: "top_right",	// This can be any of the regions.
+  		config: {
+    			// See 'Configuration options' for more information.
+    			locationID: "3530597", //Location ID from http://openweathermap.org/help/city_list.txt
+    			appid: "a9aa81340342e664ca7140e66f7c7d3e",  //openweathermap.org API key
+    			colorIcon: true,
+          degreeLabel: true,
+          updateInterval: 1800000,
+          useKMPHWind: true,
+          roundTemp: true
+  		}
+    },
+    {
         module: 'MMM-CoinMarketCap',
         position: "top_left",
         header: "Cryptos",
@@ -44,22 +58,21 @@ var config = {
             apiKey: '24aa5ad0-4c67-4c89-a788-63c284ed8c7a',
             currencies: ['bitcoin', 'ethereum', 'ripple'],
             view: 'graphWithChanges',
-            conversion: 'MXN',
-            // See below for more Configuration Options
+            conversion: 'MXN'
         }
       },
       {
-  module: "MMM-NowPlayingOnSpotify",
-  position: "top_right",
+          module: "MMM-NowPlayingOnSpotify",
+          position: "top_right",
 
-  config: {
-    clientID: "854da5fa52af4b7cba0ce0a87a277840",
-    clientSecret: "5499cd55b2ce442891e24846ac6dc7e5",
-    accessToken: "BQByq8Huix9vJr-4svAbEiXxOtt7n9qP_epBJcC_6ProPjAP6BtLUSGNhEQ4LS1lQzP2ASshVMTgPk4TwyUqNygs-_fDQEWF32sLF1ZO_iArOljYhgazZWIVXUGS4oSylivbQ87T7KDRuCQGPPAWeSw",
-    refreshToken: "AQBUGjNxvpZY6ejw7qjdVUJ_vT8k0YT2wh4JTw_c65dnOkKc9YSHF8PbfmZVqVzh4nHhAkkgySdiXqBwvVKdhsZzF2p_MhS5W5qgxJ-HMZvRkuptgLDsSLgDdZajMbWVFMY",
-    moduleWidth: "200"
-  }
-},
+          config: {
+              clientID: "854da5fa52af4b7cba0ce0a87a277840",
+              clientSecret: "5499cd55b2ce442891e24846ac6dc7e5",
+              accessToken: "BQByq8Huix9vJr-4svAbEiXxOtt7n9qP_epBJcC_6ProPjAP6BtLUSGNhEQ4LS1lQzP2ASshVMTgPk4TwyUqNygs-_fDQEWF32sLF1ZO_iArOljYhgazZWIVXUGS4oSylivbQ87T7KDRuCQGPPAWeSw",
+              refreshToken: "AQBUGjNxvpZY6ejw7qjdVUJ_vT8k0YT2wh4JTw_c65dnOkKc9YSHF8PbfmZVqVzh4nHhAkkgySdiXqBwvVKdhsZzF2p_MhS5W5qgxJ-HMZvRkuptgLDsSLgDdZajMbWVFMY",
+              moduleWidth: "200"
+          }
+      },
     {
       module: "calendar",
       header: "US Holidays",
