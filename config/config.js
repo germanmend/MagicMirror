@@ -91,8 +91,46 @@ var config = {
 			module: "compliments",
 			position: "bottom_bar",
       config: {
-        remoteFile: 'https://github.com/germanmend/MagicMirror/blob/master/config/compliments.json',
-        updateInterval: 5000,
+        compliments: {
+      		anytime: [
+      			"Hey there sexy!"
+      		],
+      		morning: [
+      			"Good morning, handsome!",
+      			"Enjoy your day!",
+      			"How was your sleep?",
+            "Good morning, sunshine!",
+            "Who needs coffee when you have your smile?",
+            "Go get 'em, Tiger!"
+      		],
+      		afternoon: [
+      			"Hello, beauty!",
+      			"You look sexy!",
+      			"Looking good today!",
+            "Hitting your stride!",
+            "You are making a difference!",
+            "You're more fun than bubble wrap!"
+      		],
+      		evening: [
+      			"Wow, you look hot!",
+      			"You look nice!",
+      			"Hi, sexy!",
+            "You made someone smile today, I know it.",
+            "You are making a difference.",
+            "The day was better for your efforts."
+      		],
+          day_sunny: [
+      			"Today is a sunny day",
+      			"It's a beautiful day"
+      		],
+      		snow: [
+      			"Snowball battle!"
+      		],
+      		rain: [
+      			"Don't forget your umbrella"
+      		]
+      	},
+        updateInterval: 10000,
       }
 		},
     {
