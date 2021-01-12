@@ -75,7 +75,7 @@ var config = {
       },
     {
       module: "calendar",
-      header: "US Holidays",
+      header: "Chileo",
       position: "top_left",
       config: {
         calendars: [
